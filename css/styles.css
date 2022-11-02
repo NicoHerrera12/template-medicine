@@ -1,18 +1,70 @@
 *{
     font-family: 'DM Sans', sans-serif;
 }
+main{
+    padding-top: 80px;
+}
 a{
     text-decoration: none;
     color: #212529;
 }
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.048);
+}
 .header__logo{
     width: 60px;
-    padding: 4px;
+    padding: 5px;
 }
-.nav-background{
-    margin-top: 6px;
-    background: linear-gradient(180deg, rgba(174,211,246,1) 27%, rgba(251,251,251,0.6936974618949142) 100%);
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
+.nav__menu{
+    background-color: rgba(53, 78, 189, 0.753);
+    padding: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 40%;
+    height: 30vh;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.836);
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+}
+.nav__menu-click{
+    transform: translate(0);
+}
+.nav__item a{
+    color: #fff;
+    font-weight: 400;
+}
+.nav__list{
+    color: #000;
+    background: none;
+    border: none;
+}
+
+.nav__bars{
+    font-size: 2.5rem;
+    padding-right: 10px;
+}
+.nav__bars:hover{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.836);
+    transition: .5s;
+}
+
 .bio{
     background: linear-gradient(180deg, rgba(174,211,246,1) 27%, rgba(251,251,251,0.6936974618949142) 100%);
 }
@@ -69,13 +121,13 @@ a{
 .contact__title{
     font-size: 2rem;
 }
-.bi{
+.contact__redes-icon{
     font-size: 1.2rem;
 }
 
 .icon-wpp{
     width: 45px;
     position: fixed;
-    bottom: 60px;
+    bottom: 30px;
     right: 15px;
 }

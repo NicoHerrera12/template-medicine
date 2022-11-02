@@ -15,12 +15,25 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header d-flex justify-content-between">
-        <a href="./index.html">
-            <img class="header__logo" src="./assets/images/colmena.png" alt="">
-        </a>
+    <header class="header d-flex justify-content-between" id="header">
 
-        <nav class="navbar navbar-expand-md bg-light">
+        <nav class="nav">
+            <a href="./index.html">
+                <img class="header__logo" src="./assets/images/colmena.png" alt="">
+            </a>
+            <button class="nav__list">
+                <i class="bi bi-list nav__bars"></i>
+            </button>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="./index.html">INICIO</a></li>
+                <li class="nav__item"><a href="#servicios">SERVICIOS</a></li>
+                <li class="nav__item"><a href="#como-trabajo">COMO TRABAJO?</a></li>
+                <li class="nav__item"><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- <nav class="navbar navbar-expand-md">
             <div class="container-fluid justify-content-end ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,21 +41,21 @@
                 <div class="collapse navbar-collapse nav-background" id="navbarNav">
                     <ul class="navbar-nav d-flex align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servicios">Servicios</a>
+                            <a class="nav-link" href="#servicios">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#como-trabajo">Como trabajo?</a>
+                            <a class="nav-link" href="#como-trabajo">COMO TRABAJO?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
 
     <main>
@@ -92,7 +105,7 @@
         </section>
 
         <section class="work d-flex flex-column align-items-center" id="como-trabajo">
-            <img class="work__img" src="./assets/images/work.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="500">
+            <img class="work__img" src="./assets/images/work.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100">
             <h3 class="work__title">Como trabajo?</h3>
             <p class="text-center work__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima facere dolore officiis laborum ipsam temporibus delectus cumque, eveniet quo, porro vitae deserunt tempore sed quidem impedit nesciunt ducimus accusantium veniam.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima facere dolore officiis laborum ipsam temporibus delectus cumque, eveniet quo, porro vitae deserunt tempore sed quidem impedit nesciunt ducimus accusantium veniam.
@@ -104,13 +117,13 @@
             <h4 class="contact__title">Contactáme</h4>
 
             <a href="https://wa.me/543878581364" target="_blank">
-                <i class="bi bi-whatsapp">11 55584452</i>
+                <i class="bi bi-whatsapp contact__redes-icon">11 55584452</i>
             </a>
             <a href="https://facebook.com" target="_blank">
-                <i class="bi bi-facebook">Nutricion Salud</i>
+                <i class="bi bi-facebook contact__redes-icon">Nutricion Salud</i>
             </a>
             <a href="https://instagram.com" target="_blank">
-                <i class="bi bi-instagram">@instagram</i>
+                <i class="bi bi-instagram contact__redes-icon">@instagram</i>
             </a>
         </footer>
         <div>
@@ -120,7 +133,8 @@
         </div>
 
     </main>
-    
+    <script src="./js/menu.js"></script>
+    <script src="./js/header.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
