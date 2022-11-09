@@ -263,8 +263,6 @@ a{
 
 @media (min-width: 768px){
     .card{
-        flex-direction: row;
-        width: 42rem;
         border: none;
         margin-bottom: 20px;
     }
@@ -306,8 +304,8 @@ a{
         grid-column: 4/6;
     }
     .card{
-        width: auto;
-        
+        width: 18rem;
+        justify-self: center;
     }
 }
 
